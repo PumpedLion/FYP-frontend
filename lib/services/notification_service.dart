@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'auth_service.dart';
 
 class NotificationService {
-  static const String baseUrl = 'http://localhost:8000/api/notifications';
+  static const String baseUrl = 'https://fyp-backend-qzhc.onrender.com/api/notifications';
 
   static Future<Map<String, String>> _headers() async {
     final token = await AuthService.getToken();

@@ -487,7 +487,7 @@ class _ReaderEngagementSheetState extends State<ReaderEngagementSheet>
             radius: 18,
             backgroundColor: const Color(0xFFFF8B7D).withOpacity(0.2),
             backgroundImage: author['avatarUrl'] != null
-                ? NetworkImage(author['avatarUrl'].toString().startsWith('/uploads/') ? 'http://localhost:8000${author['avatarUrl']}' : author['avatarUrl'])
+                ? NetworkImage(author['avatarUrl'].toString().startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com${author['avatarUrl']}' : author['avatarUrl'])
                 : null,
             child: author['avatarUrl'] == null
                 ? Text(
@@ -636,7 +636,7 @@ class _ReaderEngagementSheetState extends State<ReaderEngagementSheet>
             radius: 18,
             backgroundColor: Colors.amber.shade100,
             backgroundImage: author['avatarUrl'] != null
-                ? NetworkImage(author['avatarUrl'].toString().startsWith('/uploads/') ? 'http://localhost:8000${author['avatarUrl']}' : author['avatarUrl'])
+                ? NetworkImage(author['avatarUrl'].toString().startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com${author['avatarUrl']}' : author['avatarUrl'])
                 : null,
             child: author['avatarUrl'] == null
                 ? Text(

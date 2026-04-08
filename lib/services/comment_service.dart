@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'auth_service.dart';
 
 class CommentService {
-  static const String baseUrl = 'http://localhost:8000/api/comments';
+  static const String baseUrl = 'https://fyp-backend-qzhc.onrender.com/api/comments';
 
   static Future<Map<String, String>> _headers() async {
     final token = await AuthService.getToken();

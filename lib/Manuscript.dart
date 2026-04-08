@@ -312,7 +312,7 @@ class ManuscriptCard extends StatelessWidget {
                         children: [
                           CircleAvatar(
                             radius: 8,
-                            backgroundImage: authorAvatarUrl != null ? NetworkImage(authorAvatarUrl!.startsWith('/uploads/') ? 'http://localhost:8000$authorAvatarUrl' : authorAvatarUrl!) : null,
+                            backgroundImage: authorAvatarUrl != null ? NetworkImage(authorAvatarUrl!.startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com$authorAvatarUrl' : authorAvatarUrl!) : null,
                             backgroundColor: const Color(0xFFFF8B7D).withOpacity(0.2),
                             child: authorAvatarUrl == null ? Text(authorName[0].toUpperCase(), style: const TextStyle(fontSize: 8, fontWeight: FontWeight.bold)) : null,
                           ),

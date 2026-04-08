@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'auth_service.dart';
 
 class ChapterService {
-  static const String baseUrl = 'http://localhost:8000/api/chapters';
+  static const String baseUrl = 'https://fyp-backend-qzhc.onrender.com/api/chapters';
 
   static Future<Map<String, String>> _headers() async {
     final token = await AuthService.getToken();

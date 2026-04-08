@@ -32,7 +32,7 @@ class SocketService {
     if (token == null) return;
 
     // Use your backend URL
-    const String baseUrl = "http://localhost:8000"; 
+    const String baseUrl = "https://fyp-backend-qzhc.onrender.com"; 
 
     _socket = IO.io(baseUrl, IO.OptionBuilder()
       .setTransports(['websocket'])

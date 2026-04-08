@@ -97,7 +97,7 @@ class _FollowedAuthorsPageState extends State<FollowedAuthorsPage> {
               radius: 28,
               backgroundColor: const Color(0xFFFF8B7D).withOpacity(0.1),
               backgroundImage: author['avatarUrl'] != null
-                  ? NetworkImage(author['avatarUrl'].toString().startsWith('/uploads/') ? 'http://localhost:8000${author['avatarUrl']}' : author['avatarUrl'])
+                  ? NetworkImage(author['avatarUrl'].toString().startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com${author['avatarUrl']}' : author['avatarUrl'])
                   : null,
               child: author['avatarUrl'] == null
                   ? Text(

@@ -92,7 +92,7 @@ class _FollowersPageState extends State<FollowersPage> {
               radius: 28,
               backgroundColor: const Color(0xFFFF8B7D).withOpacity(0.1),
               backgroundImage: follower['avatarUrl'] != null
-                  ? NetworkImage(follower['avatarUrl'].toString().startsWith('/uploads/') ? 'http://localhost:8000${follower['avatarUrl']}' : follower['avatarUrl'])
+                  ? NetworkImage(follower['avatarUrl'].toString().startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com${follower['avatarUrl']}' : follower['avatarUrl'])
                   : null,
               child: follower['avatarUrl'] == null
                   ? Text(

@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  static const String baseUrl = 'http://localhost:8000/api/users'; // Update for device testing if needed
+  static const String baseUrl = 'https://fyp-backend-qzhc.onrender.com/api/users'; // Update for device testing if needed
 
   // Register user
   static Future<Map<String, dynamic>> register(String fullName, String email, String password, String role) async {

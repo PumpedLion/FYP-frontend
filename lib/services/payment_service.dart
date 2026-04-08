@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'auth_service.dart';
 
 class PaymentService {
-  static const String _baseUrl = 'http://localhost:8000/api/payments';
+  static const String _baseUrl = 'https://fyp-backend-qzhc.onrender.com/api/payments';
 
   static Future<Map<String, String>> _headers() async {
     final token = await AuthService.getToken();
@@ -142,7 +142,7 @@ class PaymentService {
   static Future<void> downloadInvoice(int manuscriptId) async {
     final token = await AuthService.getToken();
     if (token == null) return;
-    final url = 'http://localhost:8000/api/payments/invoice/$manuscriptId?token=$token';
+    final url = 'https://fyp-backend-qzhc.onrender.com/api/payments/invoice/$manuscriptId?token=$token';
     final uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);

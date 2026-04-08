@@ -502,7 +502,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     backgroundColor: const Color(0xFFFF8B7D).withOpacity(0.1),
                     backgroundImage: _avatarUrl.isNotEmpty
                         ? (_avatarUrl.startsWith('/uploads/')
-                            ? NetworkImage('http://localhost:8000$_avatarUrl')
+                            ? NetworkImage('https://fyp-backend-qzhc.onrender.com$_avatarUrl')
                             : NetworkImage(_avatarUrl)) as ImageProvider
                         : null,
                     child: _isUploadingAvatar

@@ -154,7 +154,7 @@ class _PaymentPageState extends State<PaymentPage>
         return;
       }
       final formUrl = Uri.parse(
-        'http://localhost:8000/api/payments/esewa/init-form?manuscriptId=$_manuscriptId&token=${Uri.encodeComponent(token)}',
+        'https://fyp-backend-qzhc.onrender.com/api/payments/esewa/init-form?manuscriptId=$_manuscriptId&token=${Uri.encodeComponent(token)}',
       );
       await launchUrl(formUrl, mode: LaunchMode.externalApplication);
       if (mounted) {

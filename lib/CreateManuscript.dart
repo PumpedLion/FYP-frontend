@@ -507,7 +507,7 @@ class _CreateManuscriptPageState extends State<CreateManuscriptPage> {
           CircleAvatar(
             backgroundColor: salmonColor.withOpacity(0.8),
             backgroundImage: _currentUser?['avatarUrl'] != null 
-                ? NetworkImage(_currentUser!['avatarUrl'].toString().startsWith('/uploads/') ? 'http://localhost:8000${_currentUser!['avatarUrl']}' : _currentUser!['avatarUrl']) 
+                ? NetworkImage(_currentUser!['avatarUrl'].toString().startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com${_currentUser!['avatarUrl']}' : _currentUser!['avatarUrl']) 
                 : null,
             child: _currentUser?['avatarUrl'] == null 
                 ? Text(_getInitials(_currentUser?['fullName']), 

@@ -1189,7 +1189,7 @@ class _EditManuscriptPageState extends State<EditManuscriptPage> {
         radius: 16,
         backgroundColor: color,
         backgroundImage: avatarUrl != null 
-            ? NetworkImage(avatarUrl.startsWith('/uploads/') ? 'http://localhost:8000$avatarUrl' : avatarUrl) 
+            ? NetworkImage(avatarUrl.startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com$avatarUrl' : avatarUrl) 
             : null,
         child: avatarUrl == null 
             ? Text(initials, style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold))
@@ -1459,7 +1459,7 @@ class CommentsSidebar extends StatelessWidget {
                 radius: 14, 
                 backgroundColor: avatarColor, 
                 backgroundImage: avatarUrl != null 
-                    ? NetworkImage(avatarUrl.startsWith('/uploads/') ? 'http://localhost:8000$avatarUrl' : avatarUrl) 
+                    ? NetworkImage(avatarUrl.startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com$avatarUrl' : avatarUrl) 
                     : null,
                 child: avatarUrl == null 
                     ? Text(name.isNotEmpty ? name[0] : "?", style: const TextStyle(color: Colors.white, fontSize: 10))
@@ -1619,7 +1619,7 @@ class _SuggestionCardState extends State<_SuggestionCard> {
                   radius: 14,
                   backgroundColor: Colors.orange.shade200,
                   backgroundImage: editor['avatarUrl'] != null 
-                      ? NetworkImage(editor['avatarUrl'].toString().startsWith('/uploads/') ? 'http://localhost:8000${editor['avatarUrl']}' : editor['avatarUrl'])
+                      ? NetworkImage(editor['avatarUrl'].toString().startsWith('/uploads/') ? 'https://fyp-backend-qzhc.onrender.com${editor['avatarUrl']}' : editor['avatarUrl'])
                       : null,
                   child: editor['avatarUrl'] == null 
                       ? Text(
