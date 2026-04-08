@@ -1,0 +1,5 @@
+Flutter 3.29.0 G求 channel stable G求 https://github.com/flutter/flutter.git
+Framework G求 revision 35c388afb5 (1 year, 2 months ago) G求 2025-02-10 12:48:41 -0800
+Engine G求 revision f73bfc4522
+Tools G求 Dart 3.7.0 G求 DevTools 2.42.2
+
