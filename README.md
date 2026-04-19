@@ -5,7 +5,7 @@ This is the frontend (mobile application) of YourTales, a collaborative e-book a
 
 ✨ Features
 User login and registration
-Role-based UI (Author, Reader, Editor)
+Role-based UI (Author, Reader)
 Manuscript creation interface
 Chapter writing and editing
 Comment and collaboration UI
@@ -19,17 +19,18 @@ REST API integration
 ⚙️ Installation and Setup
 1. Clone the repository
 git clone https://github.com/yourusername/yourtales-frontend.git
-2. Navigate to project
-cd yourtales-frontend
-3. Install dependencies
+2. Install dependencies
 flutter pub get
-4. Run the app
+3. Run the app
 flutter run
-🌐 Backend API
 
+
+🌐 Backend API
 Make sure backend is running at:
 
 http://localhost:5000
+
+
 📁 Project Structure
 lib/
 │
@@ -38,19 +39,12 @@ lib/
 ├── services/
 ├── models/
 └── main.dart
-📸 Screenshots
-Login Screen
-Dashboard
-Editor Screen
-Payment Screen
-🚀 Future Improvements
-Full real-time editing
-UI/UX enhancements
-Offline support
+
 👨‍💻 Author
+Dev Rai
 
-Your Name
 
+######################################################################################
 Test eSewa IDs: You can use any of the following test eSewa IDs for testing purposes:
 
 9806800001
