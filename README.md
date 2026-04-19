@@ -1,19 +1,55 @@
-# yourtales
+YourTales Frontend
+Project Description
 
-A new Flutter project.
+This is the frontend (mobile application) of YourTales, a collaborative e-book authoring and publishing platform. It provides an interactive UI for authors, readers, and editors to write, collaborate, and manage content.
 
-## Getting Started
+✨ Features
+User login and registration
+Role-based UI (Author, Reader, Editor)
+Manuscript creation interface
+Chapter writing and editing
+Comment and collaboration UI
+Real-time notifications (UI integration)
+Payment interface (eSewa & Khalti)
+Invoice display
+🛠️ Technologies Used
+Flutter
+Dart
+REST API integration
+⚙️ Installation and Setup
+1. Clone the repository
+git clone https://github.com/yourusername/yourtales-frontend.git
+2. Navigate to project
+cd yourtales-frontend
+3. Install dependencies
+flutter pub get
+4. Run the app
+flutter run
+🌐 Backend API
 
-This project is a starting point for a Flutter application.
+Make sure backend is running at:
 
-A few resources to get you started if this is your first Flutter project:
+http://localhost:5000
+📁 Project Structure
+lib/
+│
+├── screens/
+├── widgets/
+├── services/
+├── models/
+└── main.dart
+📸 Screenshots
+Login Screen
+Dashboard
+Editor Screen
+Payment Screen
+🚀 Future Improvements
+Full real-time editing
+UI/UX enhancements
+Offline support
+👨‍💻 Author
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Your Name
 
 Test eSewa IDs: You can use any of the following test eSewa IDs for testing purposes:
 
